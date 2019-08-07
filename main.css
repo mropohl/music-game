@@ -10,7 +10,9 @@ body {
     margin: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -24,7 +26,7 @@ body {
     height: 0;
     position: relative;
     border: 1px solid white;
-} 
+}
 
 #points {
     color: white;
@@ -51,14 +53,26 @@ body {
     flex-direction: column;
 }
 
-#game-menu.hidden {    
+#game-menu.hidden {
     display: none;
 }
 
+#btn-new-game {
+    background: white;
+    padding: 12px 24px 12px 24px;
+    font-weight: 500;
+    color: black;
+    font-family: "Helvetica Now Display";
+    font-size: 20px;
+    line-height: 28px;
+    border: none;
+    outline: none;
+}
+
 #game-canvas canvas {
-    width: 100%!important;
-    height: 100%!important;
+    width: 100% !important;
+    height: 100% !important;
     position: absolute;
     top: 0;
     left: 0;
-} 
+}
